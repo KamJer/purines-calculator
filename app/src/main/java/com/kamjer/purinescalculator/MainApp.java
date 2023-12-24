@@ -24,9 +24,10 @@ import java.util.List;
 
 public class MainApp extends Activity {
 
-    private final HashMap<String, Integer> purinLookUpTable = new HashMap<>();
-    private final List<String> ing = new ArrayList<>();
-    private final List<Integer> weight = new ArrayList<>();
+    private final HashMap<String, Integer> purinesLookUpTable = new HashMap<>();
+    private final List<Ingredient> ing = new ArrayList<>();
+//    private final List<String> ing = new ArrayList<>();
+//    private final List<Integer> weight = new ArrayList<>();
 
     private int position = 0;
 
@@ -36,37 +37,38 @@ public class MainApp extends Activity {
         setContentView(R.layout.main_activity_layout);
         try {
             try {
-                loadPurinLookUpTable(purinLookUpTable);
-            } catch (Resources.NotFoundException | XmlPullParserException | IOException e) {
-                Toast.makeText(this, "Request failed: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                Log.d("tester", e.getMessage());
-            }
+                loadPurinLookUpTable(purinesLookUpTable);
 
-            String[] autocompleteData = new String[purinLookUpTable.size()];
-            purinLookUpTable.keySet().toArray(autocompleteData);
+//            creating array for an adapter (it can not take as parameter hashMap)
+                String[] autocompleteData = new String[purinesLookUpTable.size()];
+                purinesLookUpTable.keySet().toArray(autocompleteData);
 //            Handling autoCompleteText
-            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.editTextIngredient);
-            ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.select_dialog_item, autocompleteData);
-            autoCompleteTextView.setAdapter(adapter);
-
-            EditText editTextWeight = (EditText) findViewById(R.id.editTextWeight);
-
-            TextView sumText = (TextView) findViewById(R.id.textSum);
+                AutoCompleteTextView autoCompleteTextView = findViewById(R.id.editTextIngredient);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.select_dialog_item, autocompleteData);
+                autoCompleteTextView.setAdapter(adapter);
+//            Handling editTexts
+                EditText editTextWeight = findViewById(R.id.editTextWeight);
+//            Handling View Texts
+                TextView sumText = findViewById(R.id.textSum);
 
 //            Handling list
-            ListView ingListView = (ListView) findViewById(R.id.listViewIng);
-            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, R.layout.ing_list_view, R.id.textView, ing);
-            ingListView.setAdapter(arrayAdapter);
-            ingListView.setOnItemClickListener(onClickItemList());
-//            Handling Button
-            Button addButton = (Button) findViewById(R.id.addButton);
-            addButton.setOnClickListener(v -> addIngAction(v, autoCompleteTextView, editTextWeight, sumText, ing, weight));
+                ListView ingListView = findViewById(R.id.listViewIng);
+                ArrayAdapter<Ingredient> arrayAdapter = new ArrayAdapter<>(this, R.layout.ing_list_view, R.id.textView, ing);
+                ingListView.setAdapter(arrayAdapter);
+                ingListView.setOnItemClickListener(onClickItemList());
+//            Handling Buttons and actions for them
+                Button addButton = findViewById(R.id.addButton);
+                addButton.setOnClickListener(v -> addIngAction(v, autoCompleteTextView, editTextWeight, sumText, ing));
 
-            Button removeButton = (Button) findViewById(R.id.removeButton);
-            removeButton.setOnClickListener(v -> removeIngButtonAction(v,arrayAdapter, ingListView, sumText, ing, weight));
+                Button removeButton = findViewById(R.id.removeButton);
+                removeButton.setOnClickListener(v -> removeIngButtonAction(v, arrayAdapter, ingListView, sumText, ing));
+            } catch (Resources.NotFoundException | XmlPullParserException | IOException e) {
+//                if there is an issue show it to the user, if lookup table does not load there is no point i app working, it relies on it working
+                Toast.makeText(this, "Nie można załadować tabeli, problem danymi", Toast.LENGTH_LONG).show();
+            }
         } catch (Exception e) {
+//            if there is an issue show it to the user
             Toast.makeText(this, "error: " + e.getMessage(), Toast.LENGTH_LONG).show();
-            Log.d("tester", e.getMessage());
         }
     }
 
@@ -78,7 +80,7 @@ public class MainApp extends Activity {
 //            looking on a tags on a file
             if (xpp.getEventType()==XmlResourceParser.START_TAG) {
                 if (xpp.getName().equals(getResources().getString(R.string.product))) {
-//                    loading data if tag match
+//                    loading data if tag matches
                     hashMap.put(xpp.getAttributeValue(1), Integer.valueOf(xpp.getAttributeValue(2)));
                 }
             }
@@ -86,38 +88,41 @@ public class MainApp extends Activity {
         }
     }
 
-    public int calculateUricAcid(List<String> ingredients, List<Integer> wight) {
+    public int calculateUricAcid(List<Ingredient> ingredients) {
 //        creating fields
         int uricAcid = 0;
 //        looping thru list of ingredients
         for (int i = 0; i < ingredients.size(); i++) {
 //            checking if ingredient and weight is null for what ever reason so that nullPointer does not happen
-            if (ingredients.get(i) != null & wight.get(i) != null) {
+            if (ingredients.get(i) != null) {
 //                checking if data exists in a lookup table so that nullPointer does not happen
-                if (purinLookUpTable.get(ingredients.get(i)) != null) {
+                if (purinesLookUpTable.get(ingredients.get(i).getName()) != null) {
 //                    calculating uric acid
-                    uricAcid += (int) (Double.valueOf(purinLookUpTable.get(ingredients.get(i))) / 100 * wight.get(i));
+                    uricAcid += (int) (Double.valueOf(purinesLookUpTable.get(ingredients.get(i).getName())) / 100 * ingredients.get(i).getWeight());
                 }
             }
         }
         return uricAcid;
     }
 
-    public void addIngAction(View view, AutoCompleteTextView autoCompleteTextView, EditText weightText, TextView textView, List<String> ing, List<Integer> weight ){
+    public void addIngAction(View view, AutoCompleteTextView autoCompleteTextView, EditText weightText, TextView textView, List<Ingredient> ing ){
 //        checking if data exists in a lookup table, without it no calculation can be done
-        if (purinLookUpTable.get(String.valueOf(autoCompleteTextView.getText())) != null) {
+        if (purinesLookUpTable.get(String.valueOf(autoCompleteTextView.getText())) != null) {
 //            adding data to the list
-            ing.add(String.valueOf(autoCompleteTextView.getText()));
+            String ingName = String.valueOf(autoCompleteTextView.getText());
 //            validating on a xml level
             int weightTemp = 100;
 //            still validating to be sure, if string is not integer add default value of a 100
             try {
-                weight.add(Integer.parseInt(String.valueOf(weightText.getText())));
+                weightTemp = Integer.parseInt(String.valueOf(weightText.getText()));
             } catch (NumberFormatException e) {
-                weight.add(weightTemp);
+                Toast.makeText(this, "Wprowadz liczbę", Toast.LENGTH_LONG).show();
             }
+
+            Ingredient ingTemp = new Ingredient(String.valueOf(autoCompleteTextView.getText()), weightTemp);
+            ing.add(ingTemp);
 //            calculating uric acid
-            int sum = calculateUricAcid(ing, weight);
+            int sum = calculateUricAcid(ing);
 //            showing calculations
             textView.setText(String.valueOf(sum));
 //            clearing texts on a screen (comfort of using the app increased)
@@ -128,14 +133,13 @@ public class MainApp extends Activity {
         }
     }
 
-    public void removeIngButtonAction(View view, ArrayAdapter<String> adapter, ListView ingListView, TextView textView, List<String> ing, List<Integer> weight) {
+    public void removeIngButtonAction(View view, ArrayAdapter<Ingredient> adapter, ListView ingListView, TextView textView, List<Ingredient> ing) {
 //        checking if item on a list was selected
         if (position != AdapterView.INVALID_POSITION) {
 //            removing items from a lists
             adapter.remove(ing.get(position));
-            weight.remove(position);
 //            recalculating uric acid
-            int sum = calculateUricAcid(ing, weight);
+            int sum = calculateUricAcid(ing);
 //            displaying new uric acid
             textView.setText(String.valueOf(sum));
 //            selecting new position on a list if a last element was deleted, if not, selected position remains
