@@ -5,7 +5,6 @@ import androidx.annotation.NonNull;
 public class Ingredient {
     private String name;
     private int weight;
-    private int uricAcidContent;
 
     public Ingredient(String name, int weight) {
         this.name = name;
@@ -32,13 +31,5 @@ public class Ingredient {
 
     public void setWeight(int weight) {
         this.weight = weight;
-    }
-
-    public int getUricAcidContent() {
-        return uricAcidContent;
-    }
-
-    public void setUricAcidContent(int uricAcidContent) {
-        this.uricAcidContent = uricAcidContent;
     }
 }
