@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PurinesCalculator</string>
+    <string name="addButtonText">+</string>
+    <string name="removeButtonText">-</string>
+    <string name="sum">Suma</string>
+    <string name="editTextWeightHint">Wpisz wagę</string>
+    <string name="editTextIngredientHint">Wpisz składnik</string>
+    <string name="product">product</string>
+</resources>

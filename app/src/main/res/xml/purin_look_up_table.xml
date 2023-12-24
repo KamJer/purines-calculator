@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <product name="Piwo ciemne" uric_acid="24" category="Alkohole" />
+    <product name="Piwo jasne" uric_acid="24" category="Alkohole" />
+    <product name="Piwo pszeniczne" uric_acid="10" category="Alkohole" />
+    <product name="Piwo typu lager" uric_acid="13" category="Alkohole" />
+    <product name="Piwo, bezalkoholowe" uric_acid="8" category="Alkohole" />
+    <product name="Szampan" uric_acid="0" category="Alkohole" />
+    <product name="Wino" uric_acid="0" category="Alkohole" />
+    <product name="Wódka" uric_acid="0" category="Alkohole" />
+    <product name="Bażant" uric_acid="150" category="Drób i dziczyzna" />
+    <product name="Gęś" uric_acid="165" category="Drób i dziczyzna" />
+    <product name="Indyk, ze skórą" uric_acid="150" category="Drób i dziczyzna" />
+    <product name="Kaczka" uric_acid="138" category="Drób i dziczyzna" />
+    <product name="Królik" uric_acid="105" category="Drób i dziczyzna" />
+    <product name="Kurczak, nóżki, ze skórą" uric_acid="110" category="Drób i dziczyzna" />
+    <product name="Kurczak, piersi ze skórą" uric_acid="175" category="Drób i dziczyzna" />
+    <product name="Sarnina, udziec" uric_acid="138" category="Drób i dziczyzna" />
+    <product name="Zając" uric_acid="105" category="Drób i dziczyzna" />
+    <product name="Boczniaki" uric_acid="50" category="Grzyby" />
+    <product name="Borowik szlachetny" uric_acid="92" category="Grzyby" />
+    <product name="Grzyby konserwowe" uric_acid="29" category="Grzyby" />
+    <product name="Kurki" uric_acid="17" category="Grzyby" />
+    <product name="Pieczarki" uric_acid="58" category="Grzyby" />
+    <product name="Smardze" uric_acid="30" category="Grzyby" />
+    <product name="Jajka" uric_acid="5" category="Jaja" />
+    <product name="Jajka, białko" uric_acid="2" category="Jaja" />
+    <product name="Jajka, żółtko" uric_acid="6" category="Jaja" />
+    <product name="Boczek" uric_acid="96" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, łopatka" uric_acid="150" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, mózg" uric_acid="460" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, nerki" uric_acid="218" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, nerkówka" uric_acid="1260" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, płucka" uric_acid="147" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, polędwica" uric_acid="140" category="Mięso i producty mięsne" />
+    <product name="Cielęcina, wątróbka" uric_acid="218" category="Mięso i producty mięsne" />
+    <product name="Frankfurterki" uric_acid="89" category="Mięso i producty mięsne" />
+    <product name="Jagnięcina, serca" uric_acid="241" category="Mięso i producty mięsne" />
+    <product name="Jagnięcina" uric_acid="140" category="Mięso i producty mięsne" />
+    <product name="Kaszanka „Wątrobianka”" uric_acid="166" category="Mięso i producty mięsne" />
+    <product name="Kiełbasa biała" uric_acid="73" category="Mięso i producty mięsne" />
+    <product name="Kiełbasa smażona cielęca" uric_acid="91" category="Mięso i producty mięsne" />
+    <product name="Konina" uric_acid="200" category="Mięso i producty mięsne" />
+    <product name="Metka" uric_acid="74" category="Mięso i producty mięsne" />
+    <product name="Mielonka" uric_acid="60" category="Mięso i producty mięsne" />
+    <product name="Mortadela" uric_acid="97" category="Mięso i producty mięsne" />
+    <product name="Parówki" uric_acid="78" category="Mięso i producty mięsne" />
+    <product name="Salami" uric_acid="103" category="Mięso i producty mięsne" />
+    <product name="Szynka gotowana wieprzowa" uric_acid="130" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, golonka" uric_acid="160" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, karkówka" uric_acid="145" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, łopatka" uric_acid="150" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, nerki" uric_acid="334" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, ozory" uric_acid="136" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, polędwica" uric_acid="150" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, szynka" uric_acid="160" category="Mięso i producty mięsne" />
+    <product name="Wieprzowina, wątróbka" uric_acid="515" category="Mięso i producty mięsne" />
+    <product name="Wołowina, antrykot" uric_acid="120" category="Mięso i producty mięsne" />
+    <product name="Wołowina, karkówka" uric_acid="120" category="Mięso i producty mięsne" />
+    <product name="Wołowina, łopatka" uric_acid="110" category="Mięso i producty mięsne" />
+    <product name="Wołowina, mostek" uric_acid="90" category="Mięso i producty mięsne" />
+    <product name="Wołowina, nerki" uric_acid="269" category="Mięso i producty mięsne" />
+    <product name="Wołowina, ozory" uric_acid="160" category="Mięso i producty mięsne" />
+    <product name="Wołowina, płucka" uric_acid="399" category="Mięso i producty mięsne" />
+    <product name="Wołowina, polędwica" uric_acid="110" category="Mięso i producty mięsne" />
+    <product name="Wołowina, rostbef" uric_acid="110" category="Mięso i producty mięsne" />
+    <product name="Wołowina, serca" uric_acid="256" category="Mięso i producty mięsne" />
+    <product name="Wołowina, wątróbka" uric_acid="554" category="Mięso i producty mięsne" />
+    <product name="Mleko" uric_acid="8" category="Nabiał" />
+    <product name="Jogurt (3,5% tłuszczu)" uric_acid="8" category="Nabiał" />
+    <product name="Mleko kokosowe" uric_acid="2" category="Nabiał" />
+    <product name="Mleko zsiadłe" uric_acid="8" category="Nabiał" />
+    <product name="Ser Brie" uric_acid="7" category="Nabiał" />
+    <product name="Ser Feta" uric_acid="30" category="Nabiał" />
+    <product name="Ser Gouda" uric_acid="16" category="Nabiał" />
+    <product name="Ser Mozzarella" uric_acid="10" category="Nabiał" />
+    <product name="Ser Parmezan" uric_acid="10" category="Nabiał" />
+    <product name="Ser topiony 60% tłuszczu" uric_acid="13" category="Nabiał" />
+    <product name="Serek wiejski, ziarnisty" uric_acid="10" category="Nabiał" />
+    <product name="Sery pleśniowe" uric_acid="7" category="Nabiał" />
+    <product name="Sery żółte" uric_acid="17" category="Nabiał" />
+    <product name="Twaróg" uric_acid="10" category="Nabiał" />
+    <product name="Cola" uric_acid="10" category="Napoje" />
+    <product name="Kakao w proszku" uric_acid="71" category="Napoje" />
+    <product name="Sok grejpfrutowy" uric_acid="10" category="Napoje" />
+    <product name="Sok jabłkowy" uric_acid="12" category="Napoje" />
+    <product name="Sok multiwitamina" uric_acid="16" category="Napoje" />
+    <product name="Sok pomarańczowy" uric_acid="12" category="Napoje" />
+    <product name="Sok pomidorowy" uric_acid="5" category="Napoje" />
+    <product name="Sok z marchwi" uric_acid="5" category="Napoje" />
+    <product name="Mak" uric_acid="170" category="Orzechy i nasiona" />
+    <product name="Migdały" uric_acid="37" category="Orzechy i nasiona" />
+    <product name="Orzechy brazylijskie" uric_acid="22" category="Orzechy i nasiona" />
+    <product name="Orzechy laskowe" uric_acid="37" category="Orzechy i nasiona" />
+    <product name="Orzechy włoskie" uric_acid="27" category="Orzechy i nasiona" />
+    <product name="Orzeszki ziemne" uric_acid="80" category="Orzechy i nasiona" />
+    <product name="Sezam, nasiona suszone" uric_acid="63" category="Orzechy i nasiona" />
+    <product name="Słonecznik, nasiona" uric_acid="43" category="Orzechy i nasiona" />
+    <product name="Agrest" uric_acid="16" category="Owoce" />
+    <product name="Ananas" uric_acid="12" category="Owoce" />
+    <product name="Arbuz" uric_acid="19" category="Owoce" />
+    <product name="Banan" uric_acid="57" category="Owoce" />
+    <product name="Brzoskwinia" uric_acid="21" category="Owoce" />
+    <product name="Cytryna" uric_acid="17" category="Owoce" />
+    <product name="Czarny bez" uric_acid="33" category="Owoce" />
+    <product name="Czereśnie" uric_acid="19" category="Owoce" />
+    <product name="Daktyl, suszony" uric_acid="35" category="Owoce" />
+    <product name="Figi suszone" uric_acid="64" category="Owoce" />
+    <product name="Grejpfrut" uric_acid="15" category="Owoce" />
+    <product name="Gruszka" uric_acid="12" category="Owoce" />
+    <product name="Jabłko" uric_acid="14" category="Owoce" />
+    <product name="Jabłko suszone" uric_acid="60" category="Owoce" />
+    <product name="Jagody" uric_acid="20" category="Owoce" />
+    <product name="Jeżyna" uric_acid="15" category="Owoce" />
+    <product name="Kaki" uric_acid="12" category="Owoce" />
+    <product name="Kiwi" uric_acid="19" category="Owoce" />
+    <product name="Maliny" uric_acid="18" category="Owoce" />
+    <product name="Mango" uric_acid="12" category="Owoce" />
+    <product name="Melon" uric_acid="33" category="Owoce" />
+    <product name="Morele" uric_acid="20" category="Owoce" />
+    <product name="Morele suszone" uric_acid="73" category="Owoce" />
+    <product name="Papaja" uric_acid="12" category="Owoce" />
+    <product name="Pigwa" uric_acid="30" category="Owoce" />
+    <product name="Pomarańcza" uric_acid="19" category="Owoce" />
+    <product name="Porzeczka czerwona" uric_acid="17" category="Owoce" />
+    <product name="Rabarbar" uric_acid="212" category="Owoce" />
+    <product name="Rodzynki" uric_acid="108" category="Owoce" />
+    <product name="Śliwki" uric_acid="24" category="Owoce" />
+    <product name="Śliwki mirabelki" uric_acid="17" category="Owoce" />
+    <product name="Śliwki suszone" uric_acid="64" category="Owoce" />
+    <product name="Truskawki" uric_acid="21" category="Owoce" />
+    <product name="Winogrona" uric_acid="27" category="Owoce" />
+    <product name="Wiśnie" uric_acid="19" category="Owoce" />
+    <product name="Żurawina" uric_acid="13" category="Owoce" />
+    <product name="Bułka kajzerka" uric_acid="22" category="producty zbożowe" />
+    <product name="Bułka tarta" uric_acid="48" category="producty zbożowe" />
+    <product name="Chleb biały, pszeniczny" uric_acid="14" category="producty zbożowe" />
+    <product name="Chleb lniany" uric_acid="45" category="producty zbożowe" />
+    <product name="Chleb pełnoziarnisty" uric_acid="50" category="producty zbożowe" />
+    <product name="Chleb pszenny" uric_acid="40" category="producty zbożowe" />
+    <product name="Chleb razowy" uric_acid="50" category="producty zbożowe" />
+    <product name="Chleb żytni" uric_acid="45" category="producty zbożowe" />
+    <product name="Gryka (ziarno)" uric_acid="149" category="producty zbożowe" />
+    <product name="Jęczmień" uric_acid="96" category="producty zbożowe" />
+    <product name="Kasza jaglana" uric_acid="147" category="producty zbożowe" />
+    <product name="Kaszka kukurydziana" uric_acid="25" category="producty zbożowe" />
+    <product name="Makaron pszeniczny" uric_acid="40" category="producty zbożowe" />
+    <product name="Mąka pszenna typ 1700" uric_acid="84" category="producty zbożowe" />
+    <product name="Mąka pszenna typ 405" uric_acid="40" category="producty zbożowe" />
+    <product name="Mąka razowa" uric_acid="84" category="producty zbożowe" />
+    <product name="Mąka ryżowa" uric_acid="72" category="producty zbożowe" />
+    <product name="Owies (nasiona bez łuski)" uric_acid="100" category="producty zbożowe" />
+    <product name="Pieczywo chrupkie" uric_acid="60" category="producty zbożowe" />
+    <product name="Płatki kukurydziane" uric_acid="64" category="producty zbożowe" />
+    <product name="Proso — mąka" uric_acid="85" category="producty zbożowe" />
+    <product name="Ryż" uric_acid="35" category="producty zbożowe" />
+    <product name="Sago" uric_acid="82" category="producty zbożowe" />
+    <product name="Suchary" uric_acid="60" category="producty zbożowe" />
+    <product name="Tapioka" uric_acid="89" category="producty zbożowe" />
+    <product name="Żyto (pełne ziarno)" uric_acid="51" category="producty zbożowe" />
+    <product name="Anchois" uric_acid="240" category="Ryby i owoce morza" />
+    <product name="Dorsz" uric_acid="109" category="Ryby i owoce morza" />
+    <product name="Halibut" uric_acid="178" category="Ryby i owoce morza" />
+    <product name="Homar" uric_acid="118" category="Ryby i owoce morza" />
+    <product name="Karmazyn" uric_acid="240" category="Ryby i owoce morza" />
+    <product name="Karp" uric_acid="160" category="Ryby i owoce morza" />
+    <product name="Kawior" uric_acid="144" category="Ryby i owoce morza" />
+    <product name="Kraby" uric_acid="148" category="Ryby i owoce morza" />
+    <product name="Krewetki" uric_acid="147" category="Ryby i owoce morza" />
+    <product name="Lin" uric_acid="80" category="Ryby i owoce morza" />
+    <product name="Łosoś" uric_acid="170" category="Ryby i owoce morza" />
+    <product name="Łupacz" uric_acid="139" category="Ryby i owoce morza" />
+    <product name="Makrela" uric_acid="145" category="Ryby i owoce morza" />
+    <product name="Okoń" uric_acid="160" category="Ryby i owoce morza" />
+    <product name="Ostrygi" uric_acid="90" category="Ryby i owoce morza" />
+    <product name="Ośmiornica" uric_acid="77" category="Ryby i owoce morza" />
+    <product name="Paluszki rybne, mrożone" uric_acid="110" category="Ryby i owoce morza" />
+    <product name="Pstrąg" uric_acid="297" category="Ryby i owoce morza" />
+    <product name="Raki" uric_acid="60" category="Ryby i owoce morza" />
+    <product name="Sandacz" uric_acid="110" category="Ryby i owoce morza" />
+    <product name="Sardynki" uric_acid="345" category="Ryby i owoce morza" />
+    <product name="Sola" uric_acid="131" category="Ryby i owoce morza" />
+    <product name="Szczupak" uric_acid="140" category="Ryby i owoce morza" />
+    <product name="Szprotki wędzone" uric_acid="804" category="Ryby i owoce morza" />
+    <product name="Śledź" uric_acid="210" category="Ryby i owoce morza" />
+    <product name="Tuńczyk" uric_acid="257" category="Ryby i owoce morza" />
+    <product name="Węgorz wędzony" uric_acid="80" category="Ryby i owoce morza" />
+    <product name="Awokado" uric_acid="30" category="Warzywa" />
+    <product name="Bakłażan" uric_acid="21" category="Warzywa" />
+    <product name="Bób, świeży" uric_acid="43" category="Warzywa" />
+    <product name="Brokuły" uric_acid="81" category="Warzywa" />
+    <product name="Brukselka" uric_acid="69" category="Warzywa" />
+    <product name="Burak" uric_acid="40" category="Warzywa" />
+    <product name="Cebula" uric_acid="13" category="Warzywa" />
+    <product name="Chrzan" uric_acid="31" category="Warzywa" />
+    <product name="Ciecierzyca" uric_acid="110" category="Warzywa" />
+    <product name="Cukinia" uric_acid="24" category="Warzywa" />
+    <product name="Cykoria" uric_acid="12" category="Warzywa" />
+    <product name="Dynia" uric_acid="44" category="Warzywa" />
+    <product name="Fasola biała, sucha" uric_acid="128" category="Warzywa" />
+    <product name="Fasolka szparagowa" uric_acid="37" category="Warzywa" />
+    <product name="Groch" uric_acid="95" category="Warzywa" />
+    <product name="Groszek zielony" uric_acid="84" category="Warzywa" />
+    <product name="Jarmuż" uric_acid="48" category="Warzywa" />
+    <product name="Kalafior" uric_acid="51" category="Warzywa" />
+    <product name="Kalarepa" uric_acid="30" category="Warzywa" />
+    <product name="Kapary" uric_acid="20" category="Warzywa" />
+    <product name="Kapusta biała" uric_acid="22" category="Warzywa" />
+    <product name="Kapusta czerwona" uric_acid="32" category="Warzywa" />
+    <product name="Kapusta kiszona" uric_acid="16" category="Warzywa" />
+    <product name="Kapusta pekińska" uric_acid="22" category="Warzywa" />
+    <product name="Kapusta włoska" uric_acid="37" category="Warzywa" />
+    <product name="Karczochy" uric_acid="50" category="Warzywa" />
+    <product name="Kasztany" uric_acid="2" category="Warzywa" />
+    <product name="Koncentrat pomidorowy" uric_acid="80" category="Warzywa" />
+    <product name="Koperek" uric_acid="17" category="Warzywa" />
+    <product name="Kukurydza słodka" uric_acid="52" category="Warzywa" />
+    <product name="Marchew" uric_acid="17" category="Warzywa" />
+    <product name="Natka pietruszki" uric_acid="57" category="Warzywa" />
+    <product name="Ogórki" uric_acid="7" category="Warzywa" />
+    <product name="Ogórki korniszone" uric_acid="8" category="Warzywa" />
+    <product name="Oliwki zielone marynowane" uric_acid="28" category="Warzywa" />
+    <product name="Papryka czerwona" uric_acid="15" category="Warzywa" />
+    <product name="Papryka zielona" uric_acid="55" category="Warzywa" />
+    <product name="Pasternak" uric_acid="24" category="Warzywa" />
+    <product name="Pietruszka" uric_acid="24" category="Warzywa" />
+    <product name="Pomidory" uric_acid="11" category="Warzywa" />
+    <product name="Por" uric_acid="74" category="Warzywa" />
+    <product name="Portulaka" uric_acid="26" category="Warzywa" />
+    <product name="Roszponka" uric_acid="38" category="Warzywa" />
+    <product name="Rzepa" uric_acid="18" category="Warzywa" />
+    <product name="Rzeżucha" uric_acid="20" category="Warzywa" />
+    <product name="Rzodkiewka" uric_acid="15" category="Warzywa" />
+    <product name="Salsefia" uric_acid="70" category="Warzywa" />
+    <product name="Sałata" uric_acid="14" category="Warzywa" />
+    <product name="Seler" uric_acid="30" category="Warzywa" />
+    <product name="Soczewica" uric_acid="127" category="Warzywa" />
+    <product name="Soja, sucha" uric_acid="192" category="Warzywa" />
+    <product name="Szczaw" uric_acid="55" category="Warzywa" />
+    <product name="Szczypiorek" uric_acid="67" category="Warzywa" />
+    <product name="Szparagi" uric_acid="24" category="Warzywa" />
+    <product name="Szpinak" uric_acid="57" category="Warzywa" />
+    <product name="Ziemniaki" uric_acid="16" category="Warzywa" />
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainApp">
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:completionThreshold="3"
+        android:hint="@string/editTextIngredientHint" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextIngredient"
+        android:inputType="number"
+        android:hint="@string/editTextWeightHint"
+        android:autofillHints="Waga"/>
+
+    <TextView
+        android:id="@+id/textSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/editTextWeight"
+        android:text="@string/sum"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSum"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/addButtonText" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/removeButtonText" />
+    
+    <ListView
+        android:id="@+id/listViewIng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:layout_below="@id/removeButton"/>
+</RelativeLayout>
