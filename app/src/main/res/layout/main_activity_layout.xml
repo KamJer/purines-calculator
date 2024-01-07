@@ -3,13 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainApp">
+    tools:context=".activity.MainApp">
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/options"/>
 
     <AutoCompleteTextView
         android:id="@+id/editTextIngredient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_below="@id/settingButton"
         android:completionThreshold="3"
         android:hint="@string/editTextIngredientHint" />
 

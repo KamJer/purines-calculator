@@ -3,7 +3,8 @@
     <string name="addButtonText">+</string>
     <string name="removeButtonText">-</string>
     <string name="sum">Suma</string>
-    <string name="editTextWeightHint">Wpisz wagę</string>
+    <string name="editTextWeightHint">100 g</string>
     <string name="editTextIngredientHint">Wpisz składnik</string>
     <string name="product">product</string>
+    <string name="options">Składniki</string>
 </resources>

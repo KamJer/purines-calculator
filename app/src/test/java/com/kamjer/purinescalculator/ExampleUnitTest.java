@@ -1,5 +1,7 @@
 package com.kamjer.purinescalculator;
 
+import com.kamjer.purinescalculator.activity.MainApp;
+
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;

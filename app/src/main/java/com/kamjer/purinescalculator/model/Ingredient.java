@@ -1,4 +1,4 @@
-package com.kamjer.purinescalculator;
+package com.kamjer.purinescalculator.model;
 
 import androidx.annotation.NonNull;
 
