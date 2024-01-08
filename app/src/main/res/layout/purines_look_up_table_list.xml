@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/listViewAllIng"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allIngredientRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:choiceMode="singleChoice" />
+        android:clipToPadding="true"
+        android:padding="16dp"
+        android:scrollbars="vertical"/>
 
 </RelativeLayout>

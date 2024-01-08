@@ -10,11 +10,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IngredientViewModel extends ViewModel {
-    private final List<Ingredient> ing = new ArrayList<>();
+    private final MutableLiveData<List<Ingredient>> ingredients = new MutableLiveData<>();
     private DataRepository dataRepository;
 
-    public List<Ingredient> getIng() {
-        return ing;
+    public IngredientViewModel() {
+        createObserverList();
+    }
+
+    public MutableLiveData<List<Ingredient>> getIngredients() {
+        return ingredients;
     }
     public DataRepository getDataRepository() {
         return dataRepository;
@@ -24,13 +28,14 @@ public class IngredientViewModel extends ViewModel {
 //        creating fields
         int uricAcid = 0;
 //        looping thru list of ingredients
-        for (int i = 0; i < ing.size(); i++) {
-//            checking if ingredient and weight is null for what ever reason so that nullPointer does not happen
-            if (ing.get(i) != null) {
+        for (int i = 0; i < ingredients.getValue().size(); i++) {
+//            checking if ingredient and weight is null for whatever reason so that nullPointer does not happen
+            if (ingredients.getValue().get(i) != null) {
 //                checking if data exists in a lookup table so that nullPointer does not happen
-                if (dataRepository.getPurinesLookUpTable().get(ing.get(i).getName()) != null) {
+                Integer uricValForIng = dataRepository.getPurinesLookUpTable().get(ingredients.getValue().get(i).getName());
+                if (uricValForIng != null) {
 //                    calculating uric acid
-                    uricAcid += (int) (Double.valueOf(dataRepository.getPurinesLookUpTable().get(ing.get(i).getName())) / 100 * ing.get(i).getWeight());
+                    uricAcid += (Double.valueOf(uricValForIng) / 100 * ingredients.getValue().get(i).getWeight());
                 }
             }
         }
@@ -46,14 +51,26 @@ public class IngredientViewModel extends ViewModel {
     }
 
     public void addIngredients(Ingredient ingredient) {
-        ing.add(ingredient);
+        ingredients.getValue().add(ingredient);
     }
 
     public void removeIngredient(int position){
-        ing.remove(position);
+        ingredients.getValue().remove(position);
     }
 
     public int ingredientsSize() {
-        return ing.size();
+        if (ingredients.getValue() == null) {
+            createObserverList();
+            return 0;
+        }
+        return ingredients.getValue().size();
+    }
+
+    public void addIngredients(List<Ingredient> ingredients) {
+        this.ingredients.setValue(ingredients);
+    }
+
+    private void createObserverList() {
+        ingredients.setValue(new ArrayList<>());
     }
 }
