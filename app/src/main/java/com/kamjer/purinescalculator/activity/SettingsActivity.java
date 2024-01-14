@@ -20,6 +20,7 @@ import com.kamjer.purinescalculator.model.Ingredient;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,24 +32,16 @@ public class SettingsActivity extends Activity {
         super.onStart();
         setContentView(R.layout.purines_look_up_table_list);
 
-        try {
-            DataRepository dataRepository = new DataRepository(this);
+        HashMap<String, Integer> purinesLookUpTable = (HashMap<String, Integer>) getIntent().getSerializableExtra("lookupTable");
 
-            RecyclerView recyclerView = findViewById(R.id.allIngredientRecyclerView);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            AllIngredientsListAdapter ingredientsListAdapter = new AllIngredientsListAdapter(this, dataRepository.getPurinesLookUpTable());
-            recyclerView.setAdapter(ingredientsListAdapter);
-
-        } catch (XmlPullParserException | IOException e) {
-            throw new RuntimeException(e);
-        }
-
-
+        RecyclerView recyclerView = findViewById(R.id.allIngredientRecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        AllIngredientsListAdapter ingredientsListAdapter = new AllIngredientsListAdapter(this, purinesLookUpTable);
+        recyclerView.setAdapter(ingredientsListAdapter);
     }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 }

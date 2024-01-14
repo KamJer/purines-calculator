@@ -7,4 +7,9 @@
     <string name="editTextIngredientHint">Wpisz składnik</string>
     <string name="product">product</string>
     <string name="options">Składniki</string>
+    <string name="noDataMessage">Nie można załadować tabeli, problem z danymi</string>
+    <string name="column_value_name">Nazwa</string>
+    <string name="column_weight_name">Waga\n[g]</string>
+    <string name="column_acid_name">Kwas moczowy\n[mg]</string>
+    <string name="column_acid_content_on_name">Kwas moczowy\n[mg/100g]</string>
 </resources>
